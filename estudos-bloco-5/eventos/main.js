@@ -37,7 +37,6 @@ for (let i = 0; i < clickLi.length; i += 1) {
 }
 
 
-
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
@@ -54,8 +53,27 @@ function changeTech() {
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portifólio?
 
+myWebpage.addEventListener('dblclick', myLinkedIn);
+
+function myLinkedIn() {
+
+    window.open('https://www.linkedin.com/in/diego-venturin-16882611a/');
+}
+
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+myWebpage.addEventListener('mousemove', changeColor);
+
+function changeColor() {
+    myWebpage.style.color = 'pink';
+}
+
+myWebpage.addEventListener('mouseout', returnColor);
+
+function returnColor() {
+    myWebpage.style.color = 'white';
+}
 
 // Segue abaixo um exemplo do uso de event.target:
 
